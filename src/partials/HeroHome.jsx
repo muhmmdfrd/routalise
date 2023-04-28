@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import Typed from 'typed.js';
 import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image.png';
@@ -6,10 +7,25 @@ import HeroImage from '../images/hero-image.png';
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const video = useRef(null);
+  const typing = useRef(null);
 
   useEffect(() => {
     videoModalOpen ? video.current.play() : video.current.pause();
   }, [videoModalOpen]);
+
+  useEffect(() => {
+    const typed = new Typed(typing.current, {
+      strings: ['Come True at 21th', 'Today is Your Day'],
+      typeSpeed: 100,
+      backDelay: 1000,
+      startDelay: 750,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
 
   return (
     <section className="relative">
@@ -46,17 +62,18 @@ function HeroHome() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Hero content */}
-        <div className="pt-32 pb-12 md:pt-40 md:pb-20">
+        <div className="pt-18 pb-12 md:pt-20 md:pb-20">
           {/* Section header */}
           <div className="text-center pb-12 md:pb-16">
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              Make your wish and goals{' '}
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400">
-                come true at 21th
-              </span>
+              Make Your Wishes & Goals <br />
+              <span
+                ref={typing}
+                className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-teal-400"
+              ></span>
             </h1>
             <div className="max-w-3xl mx-auto">
               <p
@@ -64,8 +81,9 @@ function HeroHome() {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Our landing page template works on all devices, so you only have
-                to set it up once, and get beautiful results forever.
+                Congratulations on another year of life! It's your special day,
+                so make it a great one and you're another year older and another
+                year wiser 🥳.
               </p>
             </div>
           </div>
