@@ -5,14 +5,18 @@
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Routalise</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
   <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <script>
-      if (localStorage.getItem("sidebar-expanded") == "true") {
-        document.querySelector("body").classList.add("sidebar-expanded");
+      if (localStorage.getItem('sidebar-expanded') == 'true') {
+        document.querySelector('body').classList.add('sidebar-expanded');
       } else {
-        document.querySelector("body").classList.remove("sidebar-expanded");
+        document.querySelector('body').classList.remove('sidebar-expanded');
       }
     </script>
     <div id="root"></div>
