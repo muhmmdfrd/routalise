@@ -26,7 +26,7 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
     rollupOptions: {
-      external: 'react-sound',
+      external: '/node_modules/react-sound',
     },
   },
 });
