@@ -15,14 +15,13 @@ function HeroHome() {
 
   useEffect(() => {
     const typed = new Typed(typing.current, {
-      strings: ['Come True at 21th', 'Today is Your Day'],
+      strings: ['Come True at 21st', 'Today is Your Day, Syara!'],
       typeSpeed: 100,
       backDelay: 1000,
       startDelay: 750,
     });
 
     return () => {
-      // Destroy Typed instance during cleanup to stop animation
       typed.destroy();
     };
   }, []);
@@ -83,7 +82,9 @@ function HeroHome() {
               >
                 Congratulations on another year of life! It's your special day,
                 so make it a great one and you're another year older and another
-                year wiser 🥳.
+                year wiser. <br />
+                September, 25th 2023 is special day. Happy birthday, Syara
+                Azzahra! 🥳
               </p>
             </div>
           </div>

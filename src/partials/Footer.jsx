@@ -14,7 +14,7 @@ function Footer() {
               className="text-blue-600 hover:underline"
               href="https://bithubby.com/"
             >
-              Bithubby
+              Farid
             </a>
           </div>
         </div>

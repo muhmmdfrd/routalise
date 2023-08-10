@@ -83,13 +83,13 @@ function Testimonials() {
                   Muhammad Farid
                 </cite>
                 <div className="text-gray-600">
-                  <span>Author</span>{' '}
-                  <a
+                  <span>Someone who is always there for you</span>{' '}
+                  {/* <a
                     className="text-blue-600 hover:underline"
                     href="https://bithubby.com"
                   >
                     @Bithubby
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>

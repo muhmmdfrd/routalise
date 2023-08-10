@@ -32,7 +32,12 @@ function Features() {
         <div className="pt-12 md:pt-20">
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Remember Who You Are</h1>
-            <p className="text-xl text-gray-600">Believe me ...</p>
+            <p className="text-xl text-gray-600">
+              Keep in mind that you're stronger than you think, and you can
+              conquer any challenge. You're incredibly valuable, one-of-a-kind,
+              with a lot to give to the world. Your presence brings light to
+              those around you. I am grateful to have met you.
+            </p>
           </div>
           <div className="md:grid md:grid-cols-12 md:gap-6">
             <div
@@ -40,11 +45,14 @@ function Features() {
               data-aos="fade-right"
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h3 className="h3 mb-3">Powerful suite of tools</h3>
+                <h3 className="h3 mb-3">
+                  Know Your Strengths Because You Are Strong
+                </h3>
                 <p className="text-xl text-gray-600">
-                  Duis aute irure dolor in reprehenderit in voluptate velit esse
-                  cillum dolore pariatur. Excepteur sint occaecat cupidatat non
-                  proident, sunt in culpa.
+                  Believe in yourself, for you possess a reservoir of strength,
+                  beauty, and potential that knows no bounds. Keep moving
+                  forward with confidence, and never forget the incredible
+                  person you are becoming. (Click this card below)
                 </p>
               </div>
               <div className="mb-8 md:mb-0">
@@ -62,11 +70,13 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      You Are Energetic Woman
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Absolutely! You are a radiant force of energy, lighting up
+                      every room you enter. Your vibrant spirit and enthusiasm
+                      are like a breath of fresh air, inspiring those around you
+                      to embrace life with the same spirit.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -93,11 +103,14 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      You Are The Great Navigator For Your Own Life
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      Embrace each step with confidence, for your journey is a
+                      tapestry woven with ambition and purpose. With your clear
+                      vision and determination, you're carving a path that will
+                      undoubtedly lead to a life filled with fulfillment,
+                      success, and endless possibilities.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
@@ -127,11 +140,14 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">
-                      Building the Simple ecosystem
+                      Very Charming "Owl" Woman
                     </div>
                     <div className="text-gray-600">
-                      Take collaboration to the next level with security and
-                      administrative features built for teams.
+                      The night sky becomes your canvas, and the stars, your
+                      companions. The world may try to dim your light, to paint
+                      your choices as unconventional, but you stand firm,
+                      unyielding in your commitment to embrace the path less
+                      traveled.
                     </div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
