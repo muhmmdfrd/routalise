@@ -1,8 +1,8 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
-
-import FeaturesBg from '../images/features-bg.png';
-import FeaturesElement from '../images/features-element.png';
+import SyaraImage1 from '../images/syara-1.jpg';
+import SyaraImage2 from '../images/syara-2.jpg';
+import SyaraImage3 from '../images/syara-3.jpg';
 
 function Features() {
   const [tab, setTab] = useState(1);
@@ -189,18 +189,10 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
+                      src={SyaraImage1}
+                      width="440"
+                      height="250"
+                      alt="Syara 1"
                     />
                   </div>
                 </Transition>
@@ -219,18 +211,10 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
+                      src={SyaraImage2}
+                      width="440"
+                      height="250"
+                      alt="Syara 2"
                     />
                   </div>
                 </Transition>
@@ -249,18 +233,10 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img
                       className="md:max-w-none mx-auto rounded"
-                      src={FeaturesBg}
-                      width="500"
-                      height="462"
-                      alt="Features bg"
-                    />
-                    <img
-                      className="md:max-w-none absolute w-full left-0 transform animate-float"
-                      src={FeaturesElement}
-                      width="500"
-                      height="44"
-                      alt="Element"
-                      style={{ top: '30%' }}
+                      src={SyaraImage3}
+                      width="300"
+                      height="200"
+                      alt="Syara 3"
                     />
                   </div>
                 </Transition>
