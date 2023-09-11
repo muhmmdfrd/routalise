@@ -10,10 +10,7 @@ function Footer() {
           {/* Copyrights note */}
           <div className="text-sm text-gray-600 mr-4">
             Made with &hearts; by{' '}
-            <a
-              className="text-blue-600 hover:underline"
-              href="https://bithubby.com/"
-            >
+            <a className="text-blue-600 hover:underline" href="#">
               Farid
             </a>
           </div>

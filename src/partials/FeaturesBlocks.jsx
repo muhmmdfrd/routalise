@@ -60,10 +60,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Initial Contact
+                Be Approachable
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Smile, make eye contact, and avoid using your phone while person
+                talks to you.
               </p>
             </div>
 
@@ -101,10 +102,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Discovery Session
+                Simplify
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Keep things uncomplicated when possible. Simplifying your life
+                can reduce stress and improve focus.
               </p>
             </div>
 
@@ -135,10 +137,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Contracting
+                Learn
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Keep acquiring knowledge and skills throughout your life.
+                Learning opens doors to new opportunities.
               </p>
             </div>
 
@@ -182,10 +185,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Fast Prototyping
+                Persist
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Don't give up easily. Perseverance is often the key to achieving
+                your goals and overcoming challenges.
               </p>
             </div>
 
@@ -216,10 +220,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Design Phase
+                Share with Others
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Share your feelings with people you trust. Reliving moments
+                through stories can be a great way to cherish them.
               </p>
             </div>
 
@@ -259,10 +264,11 @@ function FeaturesBlocks() {
                 </g>
               </svg>
               <h4 className="text-xl font-bold leading-snug tracking-tight mb-1">
-                Develop & Launch
+                Dream
               </h4>
               <p className="text-gray-600 text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Don't be afraid to dream big and set ambitious goals. Your
+                dreams can inspire you to achieve remarkable things in life.
               </p>
             </div>
           </div>

@@ -107,7 +107,7 @@ function Features() {
                     </div>
                     <div className="text-gray-600">
                       Embrace each step with confidence, for your journey is a
-                      tapestry woven with ambition and purpose. With your clear
+                      tapestry women with ambition and purpose. With your clear
                       vision and determination, you're carving a path that will
                       undoubtedly lead to a life filled with fulfillment,
                       success, and endless possibilities.

@@ -2,7 +2,8 @@ import React, { useState, useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import Modal from '../utils/Modal';
 
-import HeroImage from '../images/hero-image.png';
+// import HeroImage from '../images/hero-image.png';
+import HeroImage from '../images/birthday.png';
 
 function HeroHome() {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
@@ -63,7 +64,7 @@ function HeroHome() {
         {/* Hero content */}
         <div className="pt-18 pb-12 md:pt-20 md:pb-20">
           {/* Section header */}
-          <div className="text-center pb-12 md:pb-16">
+          <div className="text-center pb-6 md:pb-8">
             <h1
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
@@ -100,14 +101,14 @@ function HeroHome() {
                 <img
                   className="mx-auto"
                   src={HeroImage}
-                  width="768"
-                  height="432"
+                  width="384"
+                  height="216"
                   alt="Hero"
                 />
                 <svg
                   className="absolute inset-0 max-w-full mx-auto md:max-w-none h-auto"
-                  width="768"
-                  height="432"
+                  width="384"
+                  height="216"
                   viewBox="0 0 768 432"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink"
