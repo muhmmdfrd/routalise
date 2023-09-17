@@ -5,7 +5,7 @@ import Modal from '../utils/Modal';
 // import HeroImage from '../images/hero-image.png';
 import HeroImage from '../images/birthday.png';
 
-function HeroHome() {
+function HeroHome({ setPlay }) {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const video = useRef(null);
   const typing = useRef(null);
@@ -136,18 +136,6 @@ function HeroHome() {
                       <stop stopColor="#EAEAEA" offset="48.57%" />
                       <stop stopColor="#DFDFDF" stopOpacity="0" offset="100%" />
                     </linearGradient>
-                    <radialGradient
-                      cx="21.152%"
-                      cy="86.063%"
-                      fx="21.152%"
-                      fy="86.063%"
-                      r="79.941%"
-                      id="hero-ill-e"
-                    >
-                      <stop stopColor="#4FD1C5" offset="0%" />
-                      <stop stopColor="#81E6D9" offset="25.871%" />
-                      <stop stopColor="#338CF5" offset="100%" />
-                    </radialGradient>
                     <circle id="hero-ill-d" cx="384" cy="216" r="64" />
                   </defs>
                   <g fill="none" fillRule="evenodd">
@@ -165,10 +153,6 @@ function HeroHome() {
                       cy="216"
                       r="96"
                     />
-                    <g fillRule="nonzero">
-                      <use fill="#000" xlinkHref="#hero-ill-d" />
-                      <use fill="url(#hero-ill-e)" xlinkHref="#hero-ill-d" />
-                    </g>
                   </g>
                 </svg>
               </div>
@@ -177,6 +161,7 @@ function HeroHome() {
                 onClick={(e) => {
                   e.preventDefault();
                   e.stopPropagation();
+                  setPlay(false);
                   setVideoModalOpen(true);
                 }}
                 aria-controls="modal"
@@ -189,7 +174,7 @@ function HeroHome() {
                   <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
                   <path d="M10 17l6-5-6-5z" />
                 </svg>
-                <span className="ml-3">Watch the full video (2 min)</span>
+                <span className="ml-3">Watch the full video</span>
               </button>
             </div>
 
@@ -198,7 +183,10 @@ function HeroHome() {
               id="modal"
               ariaLabel="modal-headline"
               show={videoModalOpen}
-              handleClose={() => setVideoModalOpen(false)}
+              handleClose={() => {
+                setPlay(true);
+                setVideoModalOpen(false);
+              }}
             >
               <div className="relative pb-9/16">
                 <video
@@ -210,7 +198,7 @@ function HeroHome() {
                   autoPlay
                   controls
                 >
-                  <source src="/videos/video.mp4" type="video/mp4" />
+                  <source src="/videos/SampleVideo.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
               </div>

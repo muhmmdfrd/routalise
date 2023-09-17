@@ -2,9 +2,7 @@ import React from 'react';
 import song from '../audios/heaven.mp3';
 import ReactSound from 'react-sound';
 
-function Banner() {
-  const [play, setPlay] = React.useState(false);
-
+function Banner({ play, setPlay }) {
   return (
     <>
       <div className="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60">
