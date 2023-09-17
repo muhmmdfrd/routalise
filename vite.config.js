@@ -26,7 +26,7 @@ export default defineConfig({
       transformMixedEsModules: true,
     },
     rollupOptions: {
-      external: '/node_modules/react-sound',
+      external: ['/node_modules/react-sound', '/node_modules/logrocket'],
     },
   },
 });
