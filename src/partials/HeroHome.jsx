@@ -1,18 +1,10 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Typed from 'typed.js';
 import Modal from '../utils/Modal';
-
-// import HeroImage from '../images/hero-image.png';
 import HeroImage from '../images/birthday.png';
 
 function HeroHome({ setPlay }) {
-  const [videoModalOpen, setVideoModalOpen] = useState(false);
-  const video = useRef(null);
   const typing = useRef(null);
-
-  useEffect(() => {
-    videoModalOpen ? video.current.play() : video.current.pause();
-  }, [videoModalOpen]);
 
   useEffect(() => {
     const typed = new Typed(typing.current, {
@@ -156,53 +148,7 @@ function HeroHome({ setPlay }) {
                   </g>
                 </svg>
               </div>
-              <button
-                className="absolute top-full flex items-center transform -translate-y-1/2 bg-white rounded-full font-medium group p-4 shadow-lg"
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  setPlay(false);
-                  setVideoModalOpen(true);
-                }}
-                aria-controls="modal"
-              >
-                <svg
-                  className="w-6 h-6 fill-current text-gray-400 group-hover:text-blue-600 flex-shrink-0"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10zm0 2C5.373 24 0 18.627 0 12S5.373 0 12 0s12 5.373 12 12-5.373 12-12 12z" />
-                  <path d="M10 17l6-5-6-5z" />
-                </svg>
-                <span className="ml-3">Watch the full video</span>
-              </button>
             </div>
-
-            {/* Modal */}
-            <Modal
-              id="modal"
-              ariaLabel="modal-headline"
-              show={videoModalOpen}
-              handleClose={() => {
-                setPlay(true);
-                setVideoModalOpen(false);
-              }}
-            >
-              <div className="relative pb-9/16">
-                <video
-                  ref={video}
-                  className="absolute w-full h-full"
-                  width="1920"
-                  height="1080"
-                  loop
-                  autoPlay
-                  controls
-                >
-                  <source src="/videos/SampleVideo.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </Modal>
           </div>
         </div>
       </div>
